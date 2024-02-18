@@ -1,0 +1,121 @@
+* , 
+*::after ,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --color-primary:#219F95;
+    --color-secondary-light:#AFCEDD;
+    --color-secondary-dark:#234894;
+    --color-white:#fff;
+    --color-gray:#696969;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1rem;
+}
+@media screen and (min-width:1024px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+}
+@font-face {
+    font-family: Vazir;
+    src: url(./assets/font/Vazir-Medium.woff);
+}
+body , button{
+ font-family: vazir;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.request-holder{
+    height: 200px;
+    display: grid;
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(305px,1fr));
+    margin-top: 4rem;
+}
+.request-holder__title{
+    font-weight: 900;
+}
+.request-holder__item{
+    padding: 1.5rem;
+}
+.request__date{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.request__date h3{
+    color: var(--color-secondary-dark);
+    font-weight: 600;
+}
+.request__date span{
+    color: var(--color-gray);
+}
+.request__date div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.request__user{
+    /* display: block ; */
+    margin-bottom:1rem;
+}
+.request__index{
+    color:var(--color-gray);
+}
+.request__profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+.request__profile span{
+ font-size: 1.6rem;
+ font-weight: 500;
+}
+.request__profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    
+}
+.btn{
+    width: 15rem;
+    height: 6.4rem;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-size: 1.6rem;
+}
+.btn-secondary{
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-secondary-light);
+    color: var(--color-secondary-dark);
+    border: none;
+    border-radius: 6px;
+    margin-left: 6px;
+    font-weight: 700;
+}
